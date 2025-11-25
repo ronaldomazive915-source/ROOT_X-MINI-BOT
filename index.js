@@ -22,7 +22,7 @@ app.listen(PORT, () => {
     console.log(`
 Don't Forget To Give Star ‼️
 
-ᴘᴏᴡᴇʀᴅ ʙʏ ʀᴏᴏᴛ_x
+ᴘᴏᴡᴇʀᴅ ʙʏ ʀᴏny_x
 
 Server running on http://localhost:` + PORT)
 });
