@@ -30,14 +30,15 @@ const config = {
     AUTO_LIKE_EMOJI: ['💥', '👍', '😍', '💗', '🎈', '🎉', '🥳', '😎', '🚀', '🔥'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/JD97yzUXmou8TjzubPr8oz?mode=ac_t',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/BL0erai5W6O1dKGMczM7vG?mode=wwt',
     ADMIN_LIST_PATH: './admin.json',
     RCD_IMAGE_PATH: 'https://files.catbox.moe/cpyjf8.jpg',
     NEWSLETTER_JID: '120363419192353625@newsletter ',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
-    OWNER_NUMBER: '94742349884',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb5rhJgGE56crvmuj92v'
+    OWNER_NUMBER: '27696397895',
+    CHANNEL_LINK:
+    'https://whatsapp.com/channel/0029VbBnRol1XquTPCwUsk15'
 };
 
 // don't change s
@@ -164,9 +165,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '𝐂𝐨𝐧𝐞𝐜𝐭𝐨𝐝 𝐎𝐟 𝐑𝐨𝐨𝐭_𝐗 𝐌𝐢𝐧𝐢 𝐁𝐨𝐭',
+        '𝐂𝐨𝐧𝐞𝐜𝐭𝐨𝐝 𝐎𝐟 RONY_SKIES 𝐌𝐢𝐧𝐢 𝐁𝐨𝐭',
         `📞 Number: ${number}\n🩵 Status: Connected`,
-        '𝐏𝐨𝐰𝐞𝐫𝐝 𝐁𝐲 𝐑𝐨𝐨𝐭_𝐗'
+        '𝐏𝐨𝐰𝐞𝐫𝐝 𝐁𝐲 RONY SKIES'
     );
 
     for (const admin of admins) {
@@ -321,7 +322,7 @@ async function handleMessageRevocation(socket, number) {
         const message = formatMessage(
             '🗑️ MESSAGE DELETED',
             `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-            '𝐑𝙾𝙾𝚃_𝐗 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+            '𝐑ony 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
         );
 
         try {
@@ -390,7 +391,7 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
                             '*𝐑𝙾𝙾𝚃_𝐗 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆 👋*',
-                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️𝚁𝙾𝙾𝚃_𝚇 Main Website 🌐*\n> https://root-x-mini-bot-3.onrender.com/`,
+                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️𝚁ony Main Website 🌐*\n> https://root-x-mini-bot-3.onrender.com/`,
                             '𝐑𝙾𝙾𝚃_𝐗 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                         )
                     });
